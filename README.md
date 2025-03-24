@@ -1,44 +1,35 @@
-**Assessment: Web Scraping de Productos de Despensa**
+# Scraping de Productos desde Tottus
 
-### **Objetivo:**
+Este proyecto utiliza **Puppeteer** para realizar un web scraping de productos de la tienda online de Tottus en Falabella, extrayendo información como nombre, marca, precio, imagen, enlace, y analizando si el empaque es flexible (como plástico, bolsa, etc.) mediante un modelo de Hugging Face.
 
-Desarrollar un script utilizando una Chrome Extension o Puppeteer para scrapear los productos de la categoría "Despensa" en la siguiente URL:
-[https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa](https://tottus.falabella.com.pe/tottus-pe/category/cat13380487/Despensa)
+## Requisitos
 
-### **Requisitos:**
+Antes de ejecutar el proyecto, asegúrate de tener instalados los siguientes requisitos:
 
-1. **Extracción de Datos**
-   - El script debe obtener la siguiente información para cada producto:
-     - Categoría
-     - Subcategoría
-     - Nombre
-     - Marca
-     - Imagen (URL)
-2. **Paginación**
-   - Implementar la lógica necesaria para navegar a través de todas las páginas disponibles de la categoría.
-3. **Análisis de Imagen con IA**
-   - Enviar la imagen del producto a un algoritmo de IA para determinar si el empaque es flexible.
-   - Debería haber un campo configurable para ingresar la API Key de la API de IA o alguna librería de OCR utilizada.
-4. **Entrega de Datos**
-   - Guardar la información obtenida en un formato estructurado como JSON o CSV.
+- **Node.js**: Es necesario tener Node.js instalado. Puedes descargarlo desde [aquí](https://nodejs.org/).
+- **NPM** (Node Package Manager): Viene incluido con Node.js.
 
-### **Criterios de Evaluación:**
+Además, necesitarás una **API Key de Hugging Face** para utilizar el modelo de análisis de empaques. Puedes obtenerla creando una cuenta en [Hugging Face](https://huggingface.co/) y generando un token de API en tu perfil.
 
-- Correcta extracción de la información solicitada.
-- Manejo adecuado de la paginación.
-- Integración con un modelo de IA para la clasificación de empaques.
-- Limpieza y estructura del código.
-- Entrega de un archivo JSON o CSV con los datos extraídos.
+## Instalación
 
-### **Entrega:**
+1. **Clonar el repositorio**:
 
-- Fecha Limite: Lunes 24 de Marzo hasta las 12:00PM
-- PR en GitHub con el código fuente.
-- Instrucciones claras para ejecutar el script.
-- Archivo JSON o CSV con los datos extraídos.
-- La entrega se realizará a través de un Pull Request (PR) en el repositorio de GitHub donde se encuentran estas indicaciones.
+   Si aún no tienes el proyecto, clónalo desde GitHub:
 
-**Notas:**
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   cd <CARPETA_DEL_PROYECTO>
+   ```
 
-- Se recomienda usar Puppeteer para simular la navegación y evitar bloqueos de la página.
-- En caso de optar por una Chrome Extension, debe ser capaz de extraer y procesar la información sin interacción manual del usuario.
+## Ejecución
+
+Una vez que hayas configurado el proyecto y todo esté listo, sigue estos pasos para ejecutar el script de scraping y obtener los datos extraídos en un archivo JSON.
+
+### 1. Ejecutar el script de scraping
+
+Para iniciar el proceso de scraping, abre tu terminal en la carpeta del proyecto y ejecuta el siguiente comando:
+
+```bash
+node index.js
+```
