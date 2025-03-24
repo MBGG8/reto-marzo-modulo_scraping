@@ -37,3 +37,6 @@ node index.js
 
 ![image](https://github.com/user-attachments/assets/5161c204-8b9e-4f2b-b5b3-f535a78aadde)
 
+![image](https://github.com/user-attachments/assets/be93e56d-99e6-4e24-80af-dccac83f489c)
+
+![image](https://github.com/user-attachments/assets/95d20c28-11db-4d69-9ffd-bf1265ec93ba)
