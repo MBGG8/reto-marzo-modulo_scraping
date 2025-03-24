@@ -33,3 +33,7 @@ Para iniciar el proceso de scraping, abre tu terminal en la carpeta del proyecto
 ```bash
 node index.js
 ```
+
+
+![image](https://github.com/user-attachments/assets/5161c204-8b9e-4f2b-b5b3-f535a78aadde)
+
